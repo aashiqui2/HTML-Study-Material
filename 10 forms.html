@@ -1,0 +1,67 @@
+<!-- Forms made our page to be interactive -->
+<!--
+    The <form> element is a container for different types of input elements, such as: text fields, 
+        checkboxes, radio buttons, submit buttons, etc...
+-->
+
+<!-- The for attribute in a <label> element specifies which form element it is associated with. This association allows users to click on the label text to activate or focus on the associated form element. -->
+<html lang="en">
+    <head><title>Forms</title></head>
+    <body>
+        <form>
+            <strong>Name: </strong><input type="text" value="full name">
+
+            <p>Phone Number:<input type="number" placeholder="7899******"></p>
+
+            <!-- its good to use placeholder in place of value-->
+
+            <p>under 18: <input type="radio" name="age" ></p>
+
+            <p>above 18: <input type="radio" name="age"></p> 
+            <!-- or  <p>above 18: <input type="radio" name="age" checked></p>-->
+            <!-- use same name value to select only one in radio button
+            if you use different name value in name it will choose both -->
+
+            <p>FastFood: <input type="checkbox"></p>
+
+            <p>Fit Food: <input type="checkbox" checked></p>
+
+            <!-- checked is used to mark checkbox by default-->
+
+            <p>Payment Method
+                <select><!-- used for drop down-->
+                    <option>Cash</option>
+                    <option>Online</option>
+                    <option>Debit Card</option>
+                </select>
+            </p>
+
+            <p>Select Fast Food
+                <select>
+                    <option>Briyani</option>
+                    <option>Coffee</option>
+                    <option selected>Pizza</option><!-- selected used to select this option by default-->
+                    <option>Burger</option>
+                    <option>Sandwiche</option>
+                    <option>Egg Role</option>
+                    <option>Rista</option>
+                    <option>Fried Chicken</option>
+                </select>
+            </p>
+
+            <p>Select Fit Food
+                <select>
+                    <option>Protien Shake</option>
+                    <option>Weight Gainer Shake</option>
+                    <option selected>Oat Meal</option>
+                    <option>Pre Workout meal</option>
+                    <option>Eggs meal</option>
+                </select>
+            </p>
+
+            <p>Confirm: <input type="checkbox" required></p>
+            <p><input type="submit"></p>
+            <p><input type="submit" value="Click Me to exit"></p><!-- submit button with different text-->
+        </form>
+    </body>
+</html>
